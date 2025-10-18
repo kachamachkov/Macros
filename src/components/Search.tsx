@@ -9,13 +9,15 @@ export default function SearchComponent() {
 
     return (
         <div>
-            <label>Search Bar</label>
+            <label className='text-2xl text-amber-500 mr-2 pb-2'>
+                Search Bar
+            </label>
 
             <input
-                type="text"
+                type='text'
                 value={searchTerm}
                 onChange={handleSearch}
-                placeholder="Type to search..."
+                placeholder='Type to search...'
             ></input>
         </div>
     );
